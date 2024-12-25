@@ -149,7 +149,7 @@
         <div class="modal-footer-summary">
           <div class="confirm-section">
             <div class="confirm-box">
-              <button @click="confirmPayment" class="btn-confirm">請點選LINE PAY付款</button>
+              <button @click="confirmPayment" class="btn-confirm">點選以LINEPAY掃碼付款</button>
             </div>
             <div class="linepay-logo">
               <img src="@/assets/linepay.png" alt="LINE Pay" />
@@ -295,9 +295,8 @@
   function handleTimeout() {
   clearInterval(countdownTimer);
   countdownTimer = null;
-  if (confirm('已超過付款時間，請按確認返回主頁面')) {
-  resetForm();
-  }
+  alert('已超過付款時間，將返回主頁面'); // 使用 alert 提示，不給取消選項
+  resetForm(); // 直接執行，不依賴用戶操作
 }
 
 // 處理時間格式
