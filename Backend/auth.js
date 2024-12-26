@@ -22,12 +22,13 @@ export const login = async (account, password) => {
             getStaffName.name = response.data.user.name;//將登入者的名字存到getStaffName.name
             const token = response.data.token;//將token存到token
             localStorage.setItem('stayToken', token);//將token存到localStorage，以便之後使用
-            console.log(`Login successful, token: ${token }`);
+            console.log(`Auth: ${authState.isAuthenticated}`);
         } else {
             throw new Error('Invalid credentials');
         }
     } catch (error) {
         authState.isAuthenticated = false;
+        console.log(`Auth: ${authState.isAuthenticated}`);
         throw error;
     }
 };

@@ -62,7 +62,7 @@ onMounted(() => {
 
       <div class="passwords d-flex">
         <div class="name">密碼：</div>
-        <input type="text" id="password" v-model="password" name="password" placeholder="請輸入密碼">
+        <input type="password" id="password" v-model="password" name="password" placeholder="請輸入密碼">
       </div>
 
       <button class="btn btn-primary mt-3" @click="enter">登入</button>
