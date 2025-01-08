@@ -1,6 +1,6 @@
 <script setup>
 import { useRouter } from 'vue-router'
-import Logo from '/logonNoBg1.png'
+import Logo from '/newLogo.png'
 
 const router = useRouter()
 
@@ -20,8 +20,8 @@ const gohome = () => {
         <img :src="Logo" alt="Marine Museum Logo" class="logo">
       </div>
       <div class="site-name" @click="gohome">
-        <h1 class="chinese-name">逢甲海洋生物博物館</h1>
-        <span class="eng-name">Feng Chia Marine Biology Museum</span>
+        <h1 class="chinese-name">水中游海洋生物博物館</h1>
+        <span class="eng-name">AquaWorld Marine Biology Museum</span>
       </div>
     </div>
   </header>
@@ -64,6 +64,7 @@ const gohome = () => {
   height: 80px;
   object-fit: contain;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  padding-bottom: 5px;
 }
 
 .site-name {
@@ -131,8 +132,8 @@ const gohome = () => {
   }
 
   .logo {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
 
   .chinese-name {
