@@ -7,8 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig({
 
-  base: '/fengchia_mbm_' +
-      'web/', // 設定部署的基礎路徑
+  base: '/fengchia_mbm_web/', // 設定部署的基礎路徑
 
   plugins: [
     vue(),
