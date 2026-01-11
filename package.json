@@ -9,7 +9,9 @@
     "dev:server2": "node Backend/serve.js",
     "dev:server3": "node Backend/BioServe.js",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist --repo https://ghp_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@github.com/yhnjiuy4321/fengjia_mbm-master.git"
+
   },
   "dependencies": {
     "axios": "^1.7.7",
